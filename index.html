@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.15.0/matter.min.js"
+		integrity="sha512-zbys69L/QzU+IIRLUIMXpYidZQk85uqm1kc70CQltVQ+bRHhxPPyQEb3+xezs0gNP+L+HpR8lGFuc129yE+mBA=="
+		crossorigin="anonymous"></script>
+	<title>Document</title>
+	<style>
+		.hidden {
+			display: none !important;
+		}
+
+		.winner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			z-index: 1;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		h1 {
+			color: white;
+			font-size: 70px;
+			;
+		}
+	</style>
+</head>
+
+<body style="margin: 0;">
+	<div class="winner hidden">
+		<h1>You Win!</h1>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
