@@ -1,7 +1,9 @@
+alert('To move the ball, use the keys W A S D');
+
 const { Engine, Render, World, Runner, Bodies, Body, Events } = Matter;
 
-const cellsHorizontal = 8;
-const cellsVertical = 6;
+const cellsHorizontal = 9;
+const cellsVertical = 8;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
@@ -153,16 +155,16 @@ World.add(world, ball);
 document.addEventListener('keydown', (event) => {
 	const { x, y } = ball.velocity;
 	if (event.key === 'w') {
-		Body.setVelocity(ball, { x, y: -15 });
+		Body.setVelocity(ball, { x, y: -10 });
 	}
 	if (event.key === 'd') {
-		Body.setVelocity(ball, { x: +15, y });
+		Body.setVelocity(ball, { x: +10, y });
 	}
 	if (event.key === 's') {
-		Body.setVelocity(ball, { x, y: 15 });
+		Body.setVelocity(ball, { x, y: 10 });
 	}
 	if (event.key === 'a') {
-		Body.setVelocity(ball, { x: -15, y });
+		Body.setVelocity(ball, { x: -10, y });
 	}
 });
 
