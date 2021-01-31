@@ -1,4 +1,8 @@
-alert('To move the ball, use the keys W A S D');
+const alerted = localStorage.getItem('alerted') || '';
+if (alerted != 'yes') {
+	alert('To move the ball, use the keys W A S D');
+	localStorage.setItem('alerted', 'yes');
+}
 
 const { Engine, Render, World, Runner, Bodies, Body, Events } = Matter;
 
