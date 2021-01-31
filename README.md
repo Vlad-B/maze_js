@@ -1,4 +1,4 @@
-# Colour Guessing Game
+# Maze Game
 
 Maze app made with JavaScript and Matter.js
 
